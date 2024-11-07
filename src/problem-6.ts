@@ -4,6 +4,7 @@ interface Profile {
     age: number;
     email: string;
 }
+
 function updateProfile(profile: Profile, updates: Partial<Profile>): Profile {
     return { ...profile, ...updates };
 }
