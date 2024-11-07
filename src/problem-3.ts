@@ -22,7 +22,4 @@ function countWordOccurrences(inputString: string, word: string): number {
     return count;
 }
 
-// Sample Input
 console.log(countWordOccurrences("TypeScript is great. I love TypeScript!", "typescript")); 
-
-// Output: 2

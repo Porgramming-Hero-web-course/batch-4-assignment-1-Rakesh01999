@@ -1,5 +1,13 @@
-type Circle = { shape: "circle"; radius: number };
-type Rectangle = { shape: "rectangle"; width: number; height: number };
+
+
+type Circle = {
+    shape: "circle";
+    radius: number
+};
+type Rectangle = {
+    shape: "rectangle";
+    width: number; height: number
+};
 type Shape = Circle | Rectangle;
 
 function calculateShapeArea(shape: Shape): number {
@@ -10,13 +18,13 @@ function calculateShapeArea(shape: Shape): number {
     }
 }
 
-// Sample Input
 const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
-console.log(circleArea); // Output: 78.54
+console.log(circleArea);
 
 const rectangleArea = calculateShapeArea({
     shape: "rectangle",
     width: 4,
     height: 6,
 });
-console.log(rectangleArea); // Output: 24
+console.log(rectangleArea);
+
